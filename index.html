@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="5120x2880_pure_minimal.png" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="introduction-words">
+        <p id="one" style="transform: translate(0,6vw);"></p>
+        <!-- <p class="block">Kevin Xiong</p> -->
+        <p id="two" style="font-size: clamp(20px, 3vw, 55px);z-index: 3;transform: translate(0,2vw);"></p>
+    </div>
+    <div id="top"></div>
+
+    <div>
+        <div class="blob" style="position: fixed;">
+            <div class="inside" id="blobInside">
+            </div>
+        </div>
+    </div>
+
+    <div class="background-container">
+        <img draggable="false" class="background" src="5120x2880_pure_minimal.png" style="width:100vw;height:100vh"
+            alt="">
+    </div>
+
+    <div class="mobile-nav-bar">
+        <div class="test">
+            <div class="stick-container">
+                <div id="stick1" class="stick"></div>
+                <div id="stick2" class="stick" style="position: absolute; top:50%;transform: translate(0,-50%);">
+                </div>
+                <div class="stick" id="bruh" style="background-color: #F2F2F2;"></div>
+
+                <div id="stick3" class="stick"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="mobile-nav-bar-contents">
+        <a href="#About" style="animation-delay: 0.1s;" class="the-contents">About</a>
+        <a href="#Contact" style="animation-delay: 0.25s;" class="the-contents">Contact</a>
+    </div>
+
+    <div class=" nav-bar">
+        <ul>
+            <div class="logo-container">
+                <a href="file:///C:/Users/kevin/Documents/web%20programming%20stuff/websites/portfolio/index.html"><img class="logo" src="logo.png" alt=""></a>
+            </div>
+            <div>
+                <li>
+                    <a class="right"
+                        href="C:\Users\kevin\Documents\web programming stuff\websites\portfolio\personal.html">
+                        About
+                    </a>
+                </li>
+                <li style="margin-right:1px;margin-left:1px;font-size:clamp(18px, 4vw, 27px);">
+                    ┃
+                </li>
+                <li>
+                    <a class="right" href="#Contact">
+                        Placeholder (reformat)
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+    
+
+    <main class="blog">
+            <h2 style="font-style: italic;font-size: 25px;text-decoration:none;">This website was heavily inspired by
+                TZ's Engi's (TF2) Exchanges
+            </h2>
+            <hr style="margin-bottom: 80px;margin-top:50px;width:800px">
+        <ul class="articles-list">
+            <li><a href="C:\Users\kevin\Documents\web programming stuff\websites\portfolio\first_article.html" class="article">Mystery Article</a></li>
+            <!-- <li><a href="websites\portfolio\first_article.html" class="article">Everything to Add...</a></li> -->
+
+            <!-- Save 3 Years Doing Programming as a Staples High School Student -->
+        </ul>
+    </main>
+
+    <!-- lazy load this -->
+
+    <!-- make clamp for vw (for desktop support). apply it to the img and text -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- to-do -->
+<!-- turn the about and contact just into a seperate "personal" page/section -->
+<!-- lazy load the images, perhaps even some animations for the "personal" section -->
+<!-- main page is now the blog -->
+<!-- fix scroll to smoothly -->

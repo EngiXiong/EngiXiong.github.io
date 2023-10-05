@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap" rel="stylesheet">
+    <link rel="preload" href="blue-forest-minimal-4k-kz.jpg" as="image">
+    <link rel="preload" href="zsi4mwegkyo61.jpg" as="image">
+</head>
+
+<body style="background-color: #050505;">
+    <div class="mobile-nav-bar">
+        <div class="test">
+            <div class="stick-container">
+                <div id="stick1" class="stick"></div>
+                <div id="stick2" class="stick" style="position: absolute; top:50%;transform: translate(0,-50%);">
+                </div>
+                <div class="stick" id="bruh" style="background-color: #F2F2F2;"></div>
+
+                <div id="stick3" class="stick"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="mobile-nav-bar-contents">
+        <a href="#About" style="animation-delay: 0.1s;" class="the-contents">About</a>
+        <a href="#Contact" style="animation-delay: 0.25s;" class="the-contents">Contact</a>
+    </div>
+    <div class=" nav-bar">
+        <ul>
+            <div class="logo-container">
+                <a href="file:///C:/Users/kevin/Documents/web%20programming%20stuff/websites/portfolio/index.html"><img
+                        class="logo" src="logo.png" alt=""></a>
+            </div>
+            <div>
+                <li>
+                    <a class="right"
+                        href="C:\Users\kevin\Documents\web programming stuff\websites\portfolio\personal.html">
+                        Personal
+                    </a>
+                </li>
+                <li style="margin-right:1px;margin-left:1px;font-size:clamp(18px, 4vw, 27px);">
+                    ┃
+                </li>
+                <li>
+                    <a class="right" href="#Contact">
+                        Placeholder
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+
+    
+    <div id="dots-container" style="margin-top:112px"></div>
+    <main id="About" style="padding-top:none;margin-top:0;background-color: #050505;">
+        <div class="section" style="background-color: transparent;">
+            <div class="imgDiv">
+                <img class="sectionImg" src="zsi4mwegkyo61.jpg" alt="about me image" loading="lazy">
+            </div>
+            <div class="sectionDiv">
+                <h2 style="margin-bottom: 10px;">About</h2>
+                <ul>
+                    <li>
+                        1+ year experience in HTML, CSS, and JS
+                    </li>
+                    <li>Proficient in responsive web design </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Contact" style="margin-bottom: 100px;"></div>
+        <div class="section2" style="flex-wrap: wrap-reverse;justify-content: flex-end;background-color: transparent;">
+            <div class="sectionDiv">
+                <h2 style="margin-bottom: 10px;">Contact</h2>
+                <ul class="test1">
+                    <li>Email:kx1003903@students.westportps.org</li>
+                </ul>
+            </div>
+            <div class="imgDiv">
+                <img class="sectionImg2" src="blue-forest-minimal-4k-kz.jpg" alt="about me image" loading="lazy">
+            </div>
+        </div>
+    </main>
+    <script>
+        window.onload = function () {
+
+            const dotsContainer = document.getElementById("dots-container");
+            const length = window.innerWidth; //how many dots
+            const dots = [];
+
+            function createDot() {
+                const dot = document.createElement("div");
+                dot.classList.add("dot");
+                dot.style.animationDelay = Math.random() * 2 + 0.5 + "s";
+                dotsContainer.appendChild(dot);
+                dots.push(dot);
+            }
+
+            for (let i = 0; i < length; i++) {
+                createDot();
+            }
+
+            animateDots();
+
+
+            function animateDots() {
+                dots.forEach(dot => {
+                    const animationDelay = parseFloat(dot.style.animationDelay) * 1000;
+
+                    dot.animate(
+                        [
+                            { opacity: 0 },
+                            { opacity: 1 },
+                        ],
+                        {
+                            duration: animationDelay,
+                            iterations: Infinity
+                        }
+                    );
+                });
+            }
+
+            const radiusDistance = 450;
+            const minScale = 1; // Minimum scale factor
+            for (const dot of dots) {
+                const dotRect = dot.getBoundingClientRect();
+                const dotX = dotRect.left + dotRect.width / 2;
+                const dotY = dotRect.top + dotRect.height / 2;
+
+                const distance = Math.sqrt((window.innerWidth / 2 - dotX) ** 2 + (window.innerHeight / 2 - dotY) ** 2);
+
+                if (distance <= radiusDistance) {
+                    // Calculate the scale factor based on the distance with a minimum of minScale
+                    const scale = Math.max(1, 20.75 - (distance / (radiusDistance*2.5)) * 45.5);
+                    dot.style.transform = `scale(${scale})`;
+                } else {
+                    dot.style.transform = `scale(${minScale})`;
+                }
+            }
+
+            window.addEventListener("mousemove", e => {
+                const radiusDistance = 450;
+                const minScale = 1; // Minimum scale factor
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                for (const dot of dots) {
+                    const dotRect = dot.getBoundingClientRect();
+                    const dotX = dotRect.left + dotRect.width / 2;
+                    const dotY = dotRect.top + dotRect.height / 2;
+
+                    const distance = Math.sqrt((mouseX - dotX) ** 2 + (mouseY - dotY) ** 2);
+
+                    if (distance <= radiusDistance) {
+                        // Calculate the scale factor based on the distance with a minimum of minScale
+                        const scale = Math.max(1, 20.75 - (distance / (radiusDistance*2.5)) * 45.5);
+                        dot.style.transform = `scale(${scale})`;
+                    } else {
+                        dot.style.transform = `scale(${minScale})`;
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
