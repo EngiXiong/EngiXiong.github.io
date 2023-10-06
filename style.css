@@ -623,7 +623,7 @@ h2 {
 }
 
 .dot {
-    width: 1.5px;
+    width: 2.5px;
     aspect-ratio: 1/1;
     background-color: rgb(1, 175, 228);
     position: relative;
