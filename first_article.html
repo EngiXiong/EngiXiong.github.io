@@ -6,47 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #141010;
-        }
-
-        .article {
-            margin-top: 200px;
-            margin-bottom: 88px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .test7 {
-            width: 42.5vw;
-            color: rgb(234, 254, 254);
-        }
-
-        h2 {
-            color: rgb(202, 246, 253);
-            font-weight: bold;
-            font-size: 1.7em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        p {
-            margin-bottom: 25px;
-            font-size: 1.5em;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap" rel="stylesheet">
+    <link rel="preload" href="blue-forest-minimal-4k-kz.jpg" as="image">
+    <link rel="preload" href="zsi4mwegkyo61.jpg" as="image">
 </head>
 
-<body>
-    <div>
-        <div class="blob" style="position: fixed;">
-            <div class="inside" id="blobInside">
-            </div>
-        </div>
-    </div>
+<body style="background-color: #050505;">
     <div class="mobile-nav-bar">
         <div class="test">
             <div class="stick-container">
@@ -90,92 +57,120 @@
     </div>
 
 
-    <div class="article">
-        <div class="test7">
-            <h1> Most importantly, if you let your ego inflate because you are “smarter” then your learning will
-                stagnate
-                rapidly
-                -T
-            </h1>
 
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
 
-            <h2>Relatable</h2>
-            <p> I’ve written several anecdotes, but they’re all put aside now: they weren’t mainstream enough, how
-                unfortunate…
-            </p>
-            <br>
-
-            <h2>Do You Really Need To?</h2>
-            <p>
-                I’m on a quest to find some bgm to put in the bgm section on this website. Perhaps it is a tradition
-                after
-                being
-                in
-                DMO’s class. Perhaps if you have some recommendations, you can tell me during class :) I’m planning to
-                have
-                the
-                bgm
-                section be 100% mainstream only.
-            </p>
-            <br>
-
-            <h2>Costco Costs</h2>
-            <p>
-                There was 1 Butterfingers bar in a Costco package, and that’s all I wanted… A purchase for a 36
-                chocolate
-                bar
-                box
-                was made shortly after.
-            </p>
-            <br>
-
-            <h2>Hackathon</h2>
-            <p>
-                There’s a school hackathon being hosted in a few weeks. If you get first place for the advance division,
-                you
-                can
-                get
-                $50. I may need to partner up instead of going solo–imagine how devastating it would be not being in 1st
-                place.
-                (Please, let me know if you're interested in WB,ZB,LS,MG,AL, and others I may not know who are in CSP or
-                CSA.
-                Hackathon time range is 10/13-10/16)
-            </p>
-
-            <br>
-
-            <h2>Okay, here’s an even better deal </h2>
-            <p>
-                Feel free to ask me any questions for CSP or just CS in general. To be honest, I only said I would
-                charge 50
-                cents
-                per project explanation to not be seen as too good to be true, but honestly I just wanted to see if I
-                could
-                help
-                my
-                friends.
-            </p>
-            <br>
-            <h2>Building</h2>
-            <p>This is a live website—I plan to add some back-end features to make this a “real” website, such as:
-            <ul
-                style="margin-left:22.5px;font-size: 1.5em;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                <li>Search bar for articles</li>
-                <li>Tracker for articles posted each following year</li>
-                <li>DOM features</li>
-                <li>Article date posted and length details</li>
-                <li>Lazy loading</li>
-                <li>General optimizations</li>
-            </ul>
-            </p>
+    <div id="dots-container" style="margin-top:112px"></div>
+    <main id="About" style="padding-top:none;margin-top:0;background-color: #050505;">
+        <div class="section" style="background-color: transparent;">
+            <div class="imgDiv">
+                <img class="sectionImg" src="zsi4mwegkyo61.jpg" alt="about me image" loading="lazy">
+            </div>
+            <div class="sectionDiv">
+                <h2 style="margin-bottom: 10px;">About</h2>
+                <ul>
+                    <li>
+                        HTML, CSS, JS, Python, VS
+                    </li>
+                    <li>800+ hours TF2 (retired)</li>
+                    <li>Watch me elavate this website to be TZ's level</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div id="Contact" style="margin-bottom: 100px;"></div>
+        <div class="section2" style="flex-wrap: wrap-reverse;justify-content: flex-end;background-color: transparent;">
+            <div class="sectionDiv">
+                <h2 style="margin-bottom: 10px;">Contact</h2>
+                <ul class="test1">
+                    <li>Email:kx1003903@students.westportps.org</li>
+                </ul>
+            </div>
+            <div class="imgDiv">
+                <img class="sectionImg2" src="blue-forest-minimal-4k-kz.jpg" alt="about me image" loading="lazy">
+            </div>
+        </div>
+    </main>
+    <script>
+        window.onload = function () {
+
+            const dotsContainer = document.getElementById("dots-container");
+            const length = window.innerWidth; //how many dots
+            const dots = [];
+
+            function createDot() {
+                const dot = document.createElement("div");
+                dot.classList.add("dot");
+                dot.style.animationDelay = Math.random() * 2 + 0.5 + "s";
+                dotsContainer.appendChild(dot);
+                dots.push(dot);
+            }
+
+            for (let i = 0; i < length; i++) {
+                createDot();
+            }
+
+            animateDots();
+
+
+            function animateDots() {
+                dots.forEach(dot => {
+                    const animationDelay = parseFloat(dot.style.animationDelay) * 1000;
+
+                    dot.animate(
+                        [
+                            { opacity: 0 },
+                            { opacity: 1 },
+                        ],
+                        {
+                            duration: animationDelay,
+                            iterations: Infinity
+                        }
+                    );
+                });
+            }
+
+            const radiusDistance = 450;
+            const minScale = 1; // Minimum scale factor
+            for (const dot of dots) {
+                const dotRect = dot.getBoundingClientRect();
+                const dotX = dotRect.left + dotRect.width / 2;
+                const dotY = dotRect.top + dotRect.height / 2;
+
+                const distance = Math.sqrt((window.innerWidth / 2 - dotX) ** 2 + (window.innerHeight / 2 - dotY) ** 2);
+
+                if (distance <= radiusDistance) {
+                    // Calculate the scale factor based on the distance with a minimum of minScale
+                    const scale = Math.max(1, 20.75 - (distance / (radiusDistance * 2.5)) * 45.5);
+                    dot.style.transform = `scale(${scale})`;
+                } else {
+                    dot.style.transform = `scale(${minScale})`;
+                }
+            }
+
+            window.addEventListener("mousemove", e => {
+                const radiusDistance = 450;
+                const minScale = 1; // Minimum scale factor
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                for (const dot of dots) {
+                    const dotRect = dot.getBoundingClientRect();
+                    const dotX = dotRect.left + dotRect.width / 2;
+                    const dotY = dotRect.top + dotRect.height / 2;
+
+                    const distance = Math.sqrt((mouseX - dotX) ** 2 + (mouseY - dotY) ** 2);
+
+                    if (distance <= radiusDistance) {
+                        // Calculate the scale factor based on the distance with a minimum of minScale
+                        const scale = Math.max(1, 20.75 - (distance / (radiusDistance * 2.5)) * 45.5);
+                        dot.style.transform = `scale(${scale})`;
+                    } else {
+                        dot.style.transform = `scale(${minScale})`;
+                    }
+                }
+            });
+        }
+
+    </script>
 </body>
 
 </html>
