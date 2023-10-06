@@ -18,6 +18,11 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     filter: blur(350px);
+    -webkit-filter: blur(350px);
+    -moz-filter: blur(350px);
+    -o-filter: blur(350px);
+    -ms-filter: blur(350px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
     animation: appear1 2.5s forwards;
 }
 
@@ -74,7 +79,7 @@ body {
     align-items: center;
     background-color: rgb(242, 242, 242);
     z-index: 3;
-    height:112px;
+    height: 112px;
     /* background-image:linear-gradient( rgb(166, 185, 253),rgb(77, 103, 199) );   */
     /* border-bottom: #fff 1px solid; */
 }
@@ -261,7 +266,7 @@ a.right:hover:before {
     padding-left: 20px;
     width: 100%;
     position: fixed;
-    top: 70px;
+    top: 112px;
     bottom: 0;
     background-color: rgb(213, 242, 255);
     z-index: 3;
@@ -430,7 +435,7 @@ main>* {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .sectionDiv {
@@ -558,7 +563,7 @@ h2 {
     flex-wrap: wrap;
     margin-top: 100px;
     margin-bottom: 100px;
-    
+
 }
 
 @media only screen and (max-width: 1132px) {
@@ -613,14 +618,14 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-top:122px;
+    margin-top: 122px;
     margin-bottom: 20px;
 }
 
 .dot {
     width: 1.5px;
     aspect-ratio: 1/1;
-    background-color:rgb(1,175,228);
+    background-color: rgb(1, 175, 228);
     position: relative;
     margin: 20px;
     opacity: 0;
@@ -651,7 +656,7 @@ hr {
 
 .articles-list {
     width: 800px;
-    margin-left:0px;
+    margin-left: 0px;
     /* turn to vw once certian width */
     display: flex;
     flex-direction: column;
@@ -664,9 +669,10 @@ hr {
     text-decoration: underline;
 }
 
-a.article{
+a.article {
     transition: 1s;
 }
+
 a.article:link {
     display: block;
     margin-bottom: 60px;
@@ -706,9 +712,9 @@ a.article:active {
         font-weight: bold;
         text-decoration: underline;
     }
-    
+
     .blog {
-        width:100vw;
+        width: 100vw;
         display: flex;
         text-align: center;
         justify-content: center;
