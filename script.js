@@ -2,7 +2,7 @@ let one = document.getElementById("one");
 let two = document.getElementById("two");
 
 let string1 = "Kevin Xiong";
-let string2 = "Recent Posts";
+let string2 = "Early Access V. 0.0.0";
 
 let risingNumbers1 = [];
 let opacityAmount1 = [];
