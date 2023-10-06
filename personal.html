@@ -71,8 +71,8 @@
                     <li>
                         HTML, CSS, JS, Python, VS
                     </li>
-                    <li>800+ Hours TF2 (retired)</li>
-                    <li>The goal: A Tom-Level Standard Website</li>
+                    <li>800+ hours TF2 (retired)</li>
+                    <li>Watch me elavate this website to be TZ's level</li>
                 </ul>
             </div>
         </div>
@@ -93,7 +93,7 @@
         window.onload = function () {
 
             const dotsContainer = document.getElementById("dots-container");
-            const length = window.innerWidth; //how many dots
+            const length = window.innerWidth/2; //how many dots
             const dots = [];
 
             function createDot() {
@@ -139,7 +139,7 @@
 
                 if (distance <= radiusDistance) {
                     // Calculate the scale factor based on the distance with a minimum of minScale
-                    const scale = Math.max(1, 20.75 - (distance / (radiusDistance * 2.5)) * 45.5);
+                    const scale = Math.max(1, 10.75 - (distance / (radiusDistance * 2.5)) * 45.5);
                     dot.style.transform = `scale(${scale})`;
                 } else {
                     dot.style.transform = `scale(${minScale})`;
@@ -161,7 +161,7 @@
 
                     if (distance <= radiusDistance) {
                         // Calculate the scale factor based on the distance with a minimum of minScale
-                        const scale = Math.max(1, 20.75 - (distance / (radiusDistance * 2.5)) * 45.5);
+                        const scale = Math.max(1, 15.75 - (distance / (radiusDistance * 2.5)) * 35.5);
                         dot.style.transform = `scale(${scale})`;
                     } else {
                         dot.style.transform = `scale(${minScale})`;
