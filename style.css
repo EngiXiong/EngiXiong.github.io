@@ -17,12 +17,11 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    filter: blur(350px);
-    -webkit-filter: blur(350px);
-    -moz-filter: blur(350px);
-    -o-filter: blur(350px);
-    -ms-filter: blur(350px);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    filter: blur(40vmax);
+    -webkit-filter: blur(40vmax);
+    -moz-filter: blur(40vmax);
+    -o-filter: blur(40vmax);
+    -ms-filter: blur(40vmax);
     animation: appear1 2.5s forwards;
 }
 
