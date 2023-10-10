@@ -146,7 +146,7 @@ body.addEventListener("mousemove", e => {
             left: e.clientX + "px",
             top: e.clientY + "px"
         }, {
-            duration: 10000, fill: "forwards"
+            duration: 3000, fill: "forwards"
         });
     }
 });
@@ -158,7 +158,7 @@ body.addEventListener("load", e => {
             left: e.clientX + "px",
             top: e.clientY + "px"
         }, {
-            duration: 5000, fill: "forwards"
+            duration: 3000, fill: "forwards"
         });
     }
 });
