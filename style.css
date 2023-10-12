@@ -738,6 +738,6 @@ a.article:active {
 }
 @media only screen and (max-width: 1000px) {
     .test7{
-        width:80vw;
+        width:95vw;
     }
 }
