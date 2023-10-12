@@ -39,37 +39,6 @@ for (let i = 0; i < string2.length; i++) {
     two.innerHTML += `<span style="position: relative; opacity:${opacityAmount2[i]}; bottom: ${risingNumbers2[i]}vw">${string2[i]}</span>`;
 }
 
-function risingAnimation(test1, test2, risingNumbers, opacityAmount, secondArr, riseAmount, roof) {
-    let riseEnd = false; // Reset the flag before each iteration
-    let opacityEnd = false;
-    for (let i = 0; i < test2.length; i++) {
-        if (risingNumbers[i] < roof) {
-            risingNumbers[i] += riseAmount / (i + 4);
-            riseEnd = true;
-
-        }
-        if (opacityAmount[i] < 1) {
-            opacityAmount[i] += 0.08 / (i + 1);
-            opacityEnd = true;
-        }
-        secondArr.innerHTML += `<span style="position: relative; opacity:${opacityAmount[i]};bottom: ${risingNumbers[i]}vw">${test2[i]}</span>`;
-    }
-    test1.innerHTML = secondArr.innerHTML;
-    secondArr.innerHTML = "";
-
-    if (riseEnd || opacityEnd) {
-        requestAnimationFrame(() => risingAnimation(test1, test2, risingNumbers, opacityAmount, secondArr, riseAmount, roof));
-    }
-}
-
-myReq = requestAnimationFrame(() => risingAnimation(one, string1, risingNumbers1, opacityAmount1, secondArr1, riseAmount1, roof1));
-myReq2 = requestAnimationFrame(() => risingAnimation(two, string2, risingNumbers2, opacityAmount2, secondArr2, riseAmount2, roof2));
-
-scrollToTopWithDelay();
-
-})
-
-
 
 var blobInside = document.getElementById("blobInside"); // Replace "blobInside" with the actual ID of your element
 
