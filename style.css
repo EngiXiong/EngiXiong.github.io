@@ -17,11 +17,11 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-       filter: blur(100vmax);
-    -webkit-filter: blur(100vmax);
-    -moz-filter: blur(100vmax);
-    -o-filter: blur(100vmax);
-    -ms-filter: blur(100vmax);
+    filter: blur(12vmax);
+    -webkit-filter: blur(12vmax);
+    -moz-filter: blur(12vmax);
+    -o-filter: blur(12vmax);
+    -ms-filter: blur(12vmax);
     animation: appear1 2.5s forwards;
 }
 
