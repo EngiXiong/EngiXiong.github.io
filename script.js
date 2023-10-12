@@ -1,29 +1,3 @@
-let one = document.getElementById("one");
-let two = document.getElementById("two");
-
-let string1 = "Kevin Xiong";
-let string2 = "Early Access V. 0.0.0";
-
-let risingNumbers1 = [];
-let opacityAmount1 = [];
-let riseEnd1 = false;
-let secondArr1 = document.createElement("p");
-
-let risingNumbers2 = [];
-let opacityAmount2 = [];
-let riseEnd2 = false;
-let secondArr2 = document.createElement("p");
-
-let riseAmount1 = 1.7;
-let riseAmount2 = 0.6;
-roof1 = 7;
-roof2 = 4;
-
-function scrollToTopWithDelay() {
-    setTimeout(function () {
-        window.scrollTo(0, 0);
-    }, 100); // Adjust the delay (in milliseconds) as needed
-}
 
 
 
