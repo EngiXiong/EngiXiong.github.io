@@ -665,7 +665,7 @@ hr {
     list-style: none;
     font-size: 35px;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 a.article {
@@ -674,8 +674,8 @@ a.article {
 
 a.article:link {
     display: block;
-    margin-bottom: 30px;
     color: white;
+    margin-top: 35px;
     background-color: transparent;
     text-decoration: none;
 }
@@ -709,7 +709,6 @@ a.article:active {
         list-style: none;
         font-size: 35px;
         font-weight: bold;
-        text-decoration: underline;
     }
 
     .blog {
@@ -730,6 +729,7 @@ a.article:active {
     justify-content: center;
     position: relative;
     z-index: 2;
+    flex-direction: column;
 }
 
 .my-article {
@@ -738,7 +738,8 @@ a.article:active {
     position: relative;
     z-index: 2;
     margin-top: 200px;
-    margin-bottom: 88px;}
+    margin-bottom: 88px;
+}
 
 .my-article h2 {
     color: rgb(202, 246, 253);
