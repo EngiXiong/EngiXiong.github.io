@@ -726,8 +726,6 @@ a.article:active {
 }
 
 .article {
-    margin-top: 200px;
-    margin-bottom: 88px;
     display: flex;
     justify-content: center;
     position: relative;
