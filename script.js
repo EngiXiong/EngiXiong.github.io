@@ -26,18 +26,6 @@ function scrollToTopWithDelay() {
 }
 
 
-window.addEventListener("load", (event) => {
-for (let i = 0; i < string1.length; i++) {
-    risingNumbers1[i] = 0.1 / (i + 1);
-    opacityAmount1[i] = 0.02 / (i + 1);
-    one.innerHTML += `<span style="position: relative; opacity:${opacityAmount1[i]}; bottom: ${risingNumbers1[i]}vw">${string1[i]}</span>`;
-}
-
-for (let i = 0; i < string2.length; i++) {
-    risingNumbers2[i] = 0.1 / (i + 1);
-    opacityAmount2[i] = 0.02 / (i + 1);
-    two.innerHTML += `<span style="position: relative; opacity:${opacityAmount2[i]}; bottom: ${risingNumbers2[i]}vw">${string2[i]}</span>`;
-}
 
 
 var blobInside = document.getElementById("blobInside"); // Replace "blobInside" with the actual ID of your element
