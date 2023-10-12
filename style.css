@@ -43,7 +43,7 @@ body {
     border-radius: 100%;
     background-image: linear-gradient( rgb(11, 64, 254), #0ff3fff5);
     /* animation: rotate 2.5s infinite cubic-bezier(.4, .41, .82, .64); */
-    animation: rotate 2.5s infinite;
+    animation: rotate 1.5s infinite;
 }
 
 
