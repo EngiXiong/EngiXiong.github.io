@@ -721,23 +721,57 @@ a.article:active {
     }
 }
 
+.test11 {
+    background-color: #141010;
+}
+
+.article {
+    margin-top: 200px;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.article h2 {
+    color: rgb(202, 246, 253);
+    font-weight: bold;
+    font-size: 1.7em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.article p {
+    margin-bottom: 25px;
+    font-size: 1.35em;
+    letter-spacing: 0.6px;
+    line-height: 1.45;
+    font-family: 'Roboto', sans-serif;
+}
+
 .test7 {
     width: 42.5vw;
     color: rgb(234, 254, 254);
 }
 
 @media only screen and (max-width: 1650px) {
-    .test7{
-        width:45vw;
+    .test7 {
+        width: 45vw;
     }
 }
-@media only screen and (max-width: 1350px) {
-    .test7{
-        width:55vw;
+
+@media only screen and (max-width: 1400px) {
+    .test7 {
+        width: 60vw;
     }
+  
 }
+
 @media only screen and (max-width: 1000px) {
-    .test7{
-        width:95vw;
+    .test7 {
+        width: 95vw;
+    }
+    .article p{
+        font-size:1.25em;
     }
 }
