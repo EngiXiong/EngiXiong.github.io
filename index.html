@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Trade_Plaza_minecraft_V2</title><link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <title>Trade_Plaza_minecraft_V2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link rel="preload" href="5120x2880_pure_minimal.png" as="image"> -->
@@ -88,10 +89,19 @@
             <div class="articles-list" style="text-decoration: none;">
                 <h2 style="margin-top: 35px;text-decoration: none;font-size:30px">Recent Posts</h2>
             </div>
-            <hr style="margin-bottom: 35px;margin-top:20px;width:800px">
+            <hr style="margin-bottom: 10px;margin-top:20px;width:800px">
             <ul class="articles-list">
-                <li><a href="https://engixiong.github.io/article2.html" class="article">Stock Forecast</a></li>
-                <li><a href="https://engixiong.github.io/first_article.html" class="article">Mystery Article</a></li>
+                <li><a href="https://engixiong.github.io/article2.html" class="article">
+                        <p style="text-decoration: underline;"> Stock Forecast</p>
+                    </a>
+                    <p style="font-size:18px;">October 11th, 2023</p>
+                </li>
+                <li><a href="https://engixiong.github.io/first_article.html" class="article">
+                        <p style="text-decoration: underline;">Mystery
+                            Article(10/6/23)</p>
+                    </a>
+                    <p style="font-size: 18px;">October 6th, 2023</p>
+                </li>
                 <!-- <li><a href="websites\portfolio\first_article.html" class="article">Everything to Add...</a></li> -->
 
                 <!-- Save 3 Years Doing Programming as a Staples High School Student -->
@@ -107,34 +117,34 @@
     <script src="script.js"></script>
 
     <script>
-    let one = document.getElementById("one");
-let two = document.getElementById("two");
+        let one = document.getElementById("one");
+        let two = document.getElementById("two");
 
-let string1 = "Kevin Xiong";
-let string2 = "Early Access V. 0.0.0";
+        let string1 = "Kevin Xiong";
+        let string2 = "Early Access V. 0.0.0";
 
-let risingNumbers1 = [];
-let opacityAmount1 = [];
-let riseEnd1 = false;
-let secondArr1 = document.createElement("p");
+        let risingNumbers1 = [];
+        let opacityAmount1 = [];
+        let riseEnd1 = false;
+        let secondArr1 = document.createElement("p");
 
-let risingNumbers2 = [];
-let opacityAmount2 = [];
-let riseEnd2 = false;
-let secondArr2 = document.createElement("p");
+        let risingNumbers2 = [];
+        let opacityAmount2 = [];
+        let riseEnd2 = false;
+        let secondArr2 = document.createElement("p");
 
-let riseAmount1 = 1.7;
-let riseAmount2 = 0.6;
-roof1 = 7;
-roof2 = 4;
+        let riseAmount1 = 1.7;
+        let riseAmount2 = 0.6;
+        roof1 = 7;
+        roof2 = 4;
 
-function scrollToTopWithDelay() {
-    setTimeout(function () {
-        window.scrollTo(0, 0);
-    }, 100); // Adjust the delay (in milliseconds) as needed
-}
+        function scrollToTopWithDelay() {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
+            }, 100); // Adjust the delay (in milliseconds) as needed
+        }
 
-    window.addEventListener("load", (event) => {
+        window.addEventListener("load", (event) => {
             for (let i = 0; i < string1.length; i++) {
                 risingNumbers1[i] = 0.1 / (i + 1);
                 opacityAmount1[i] = 0.02 / (i + 1);
