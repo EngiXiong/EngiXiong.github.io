@@ -41,7 +41,7 @@ body {
     height: 24vmax;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-image: linear-gradient( rgb(11, 64, 254), #0ff3fff5);
+    background-image: linear-gradient(rgb(11, 64, 254), #0ff3fff5);
     /* animation: rotate 2.5s infinite cubic-bezier(.4, .41, .82, .64); */
     animation: rotate 1.5s infinite;
 }
@@ -185,7 +185,7 @@ a.right:hover:before {
         position: fixed;
         border-bottom: 1.9px rgba(0, 0, 0, 0.1) solid;
         background-color: #F2F2F2;
-        height: 112px;
+        height: 82px;
         width: 100%;
         top: 0;
         display: flex;
@@ -265,7 +265,7 @@ a.right:hover:before {
     padding-left: 20px;
     width: 100%;
     position: fixed;
-    top: 112px;
+    top: 82px;
     bottom: 0;
     background-color: rgb(213, 242, 255);
     z-index: 3;
@@ -674,7 +674,7 @@ a.article {
 
 a.article:link {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     color: white;
     background-color: transparent;
     text-decoration: none;
