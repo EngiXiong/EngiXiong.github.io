@@ -744,8 +744,16 @@ a.article:active {
 .my-article h2 {
     color: rgb(202, 246, 253);
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:2em;
+}
+.my-article h3 {
+    color: rgb(202, 246, 253);
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:1.8em;
 }
 
 .my-article p {
@@ -756,6 +764,14 @@ a.article:active {
     font-family: 'Roboto', sans-serif;
 }
 
+.my-article li {
+    font-size: 1.3em;
+    letter-spacing: 0.6px;
+    line-height: 1.45;
+    font-family: 'Roboto', sans-serif;
+    list-style:decimal;
+    margin-left:45px;
+}
 .test7 {
     width: 42.5vw;
     color: rgb(234, 254, 254);
