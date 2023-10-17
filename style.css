@@ -78,7 +78,7 @@ body {
     align-items: center;
     background-color: rgb(242, 242, 242);
     z-index: 3;
-    height: 112px;
+    height: 7em;
     /* background-image:linear-gradient( rgb(166, 185, 253),rgb(77, 103, 199) );   */
     /* border-bottom: #fff 1px solid; */
 }
@@ -709,8 +709,8 @@ a.article:active {
     justify-content: center;
     position: relative;
     z-index: 2;
-    margin-top: 11.5em;
-    margin-bottom: 5em;
+    margin-top: 10em;
+    margin-bottom: 3em;
 }
 
 .my-article h2 {
