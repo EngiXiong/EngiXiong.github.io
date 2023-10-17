@@ -716,16 +716,17 @@ a.article:active {
 .my-article h2 {
     color: rgb(202, 246, 253);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.1em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top:1.5em;
 }
 .my-article h3 {
     color: rgb(202, 246, 253);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.65em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top:1.2em;
+    margin-bottom: 0.3em;
 }
 
 .my-article p {
