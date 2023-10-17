@@ -782,7 +782,7 @@ a.article:active {
         position: fixed;
         border-bottom: 1.9px rgba(0, 0, 0, 0.1) solid;
         background-color: #F2F2F2;
-        height: 82px;
+        height: 5.125em;
         width: 100%;
         top: 0;
         display: flex;
@@ -793,14 +793,8 @@ a.article:active {
     }
     
 .my-article{
-margin-top:8em;
-margin-bottom: 3.25em;
+margin-top:6.25em;
+margin-bottom: 2em;
 }
-
-
-    /* body {
-        background-color: #F2F2F2;
-        background-image: none;
-    } */
 
 }
