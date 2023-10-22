@@ -745,6 +745,15 @@ a.article:active {
     list-style:decimal;
     margin-left:45px;
 }
+.my-article ol li {
+    font-size: 1em;
+    letter-spacing: 0.6px;
+    line-height: 1.45;
+    font-family: 'Roboto', sans-serif;
+    list-style:decimal;
+    margin-left:45px;
+}
+
 .test7 {
     width: 42.5vw;
     color: rgb(234, 254, 254);
@@ -798,6 +807,6 @@ margin-bottom: 2em;
 }
 
 }
-my-article span{
+.my-article span{
     font-weight: bolder;
 }
