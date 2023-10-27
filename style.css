@@ -814,3 +814,8 @@ margin-bottom: 2em;
 .test7 hr{
 margin-bottom: 10px;
 }
+
+.article-img{
+    display: flex;
+    justify-content: center;
+}
