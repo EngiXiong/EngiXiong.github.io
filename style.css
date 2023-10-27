@@ -817,12 +817,10 @@ margin-bottom: 10px;
 .article-img{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top:20px;
     margin-bottom: 20px;
 }
 .article-img img{
-    
-    width:60%;
-    aspect-ratio: 1;
-    
+    max-width:500px;
 }
