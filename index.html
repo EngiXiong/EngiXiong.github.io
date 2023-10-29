@@ -20,7 +20,6 @@
         <!-- <p class="block">Kevin Xiong</p> -->
         <p id="two" style="font-size: clamp(20px, 3vw, 55px);z-index: 3;transform: translate(0,2vw);"></p>
     </div>
-    <div id="top"></div>
 
     <div>
         <div class="blob" style="position: fixed;">
@@ -29,52 +28,14 @@
         </div>
     </div>
 
+    <main-header></main-header>
+
     <div class="background-container">
         <img draggable="false" class="background" src="5120x2880_pure_minimal.png" style="width:100vw;height:100vh"
             alt="">
     </div>
 
-    <div class="mobile-nav-bar">
-        <div class="test">
-            <div class="stick-container">
-                <div id="stick1" class="stick"></div>
-                <div id="stick2" class="stick" style="position: absolute; top:50%;transform: translate(0,-50%);">
-                </div>
-                <div class="stick" id="bruh" style="background-color: #F2F2F2;"></div>
 
-                <div id="stick3" class="stick"></div>
-            </div>
-        </div>
-
-    </div>
-    <div class="mobile-nav-bar-contents">
-        <a href="https://engixiong.github.io/index.html" style="animation-delay: 0.15s;" class="the-contents">Home</a>
-        <a href="https://engixiong.github.io/personal.html" style="animation-delay: 0.25s;"
-            class="the-contents">About</a>
-    </div>
-
-    <div class="nav-bar">
-        <ul>
-            <div class="logo-container">
-                <a href="https://engixiong.github.io/index.html"><img class="logo" src="logo.png" alt=""></a>
-            </div>
-            <div>
-                <li>
-                    <a class="right" href="https://engixiong.github.io/personal.html">
-                        About
-                    </a>
-                </li>
-                <li style="margin-right:1px;margin-left:1px;font-size:clamp(18px, 4vw, 27px);">
-                    ┃
-                </li>
-                <li>
-                    <a class="right" href="#Contact">
-                        Placeholder (reformat)
-                    </a>
-                </li>
-            </div>
-        </ul>
-    </div>
 
 
 
@@ -90,12 +51,13 @@
                 <h2 style="margin-top: 35px;text-decoration: none;font-size:30px">Recent Posts</h2>
             </div>
             <hr style="margin-bottom: 10px;margin-top:20px;width:800px">
-            <div style="display:flex;justify-content: center;flex-wrap: wrap;text-align: center;color:rgb(67, 200, 253);flex-direction: column;">
+            <div
+                style="display:flex;justify-content: center;flex-wrap: wrap;text-align: center;color:rgb(67, 200, 253);flex-direction: column;">
                 <p style="margin-top: 5px;font-size:2.8em">Project 20K:&nbsp;</p>
                 <p style="margin-top: 5px;font-size:1.25em" id="timer"></p>
             </div>
             <ul class="articles-list">
-<!--                  <li><a href="https://engixiong.github.io/article7.html" class="article">
+                <!--                  <li><a href="https://engixiong.github.io/article7.html" class="article">
                         <p style="text-decoration: underline;">Daily?</p>
                     </a>
                     <p style="font-size:18px;">October 26th, 2023</p>
@@ -110,7 +72,7 @@
                     </a>
                     <p style="font-size:18px;">October 17th, 2023</p>
                 </li>
-                                <li><a href="https://engixiong.github.io/article4.html" class="article">
+                <li><a href="https://engixiong.github.io/article4.html" class="article">
                         <p style="text-decoration: underline;">Biography:Lifting Edition</p>
                     </a>
                     <p style="font-size:18px;">October 16th, 2023</p>
@@ -142,7 +104,7 @@
 
     <!-- make clamp for vw (for desktop support). apply it to the img and text -->
 
-
+    <script src="navbar.js"></script>
     <script src="script.js"></script>
 
     <script>
@@ -198,13 +160,13 @@
                         risingNumbers[i] = roof
                         riseEnd = true;
                     }
-                    
+
                     if (opacityAmount[i] < 1) {
                         opacityAmount[i] += 0.08 / (i + 1);
                         opacityEnd = true;
                     }
                     else if (opacityAmount[i] > 1) {
-                        opacityAmount[i] += 0
+                        opacityAmount[i] = 1
                         opacityEnd = true;
                     }
                     secondArr.innerHTML += `<span style="position: relative; opacity:${opacityAmount[i]};bottom: ${risingNumbers[i]}vw">${test2[i]}</span>`;
@@ -223,7 +185,7 @@
             scrollToTopWithDelay();
 
         })
-         // Set the date we're counting down to
+        // Set the date we're counting down to
         var countDownDate = new Date("Nov 23, 2023 23:59:59").getTime();
 
         // Update the count down every 1 second
@@ -242,7 +204,7 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="demo"
-            document.getElementById("timer").innerHTML =days + "d " + hours + "h "
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s ";
 
             // If the count down is over, write some text 
