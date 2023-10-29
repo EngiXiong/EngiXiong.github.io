@@ -193,10 +193,18 @@
                     if (risingNumbers[i] < roof) {
                         risingNumbers[i] += riseAmount / (i + 4);
                         riseEnd = true;
-
                     }
+                    else if (risingNumbers[i] > roof) {
+                        risingNumbers[i] = roof
+                        riseEnd = true;
+                    }
+                    
                     if (opacityAmount[i] < 1) {
                         opacityAmount[i] += 0.08 / (i + 1);
+                        opacityEnd = true;
+                    }
+                    else if (opacityAmount[i] > 1) {
+                        opacityAmount[i] += 0
                         opacityEnd = true;
                     }
                     secondArr.innerHTML += `<span style="position: relative; opacity:${opacityAmount[i]};bottom: ${risingNumbers[i]}vw">${test2[i]}</span>`;
