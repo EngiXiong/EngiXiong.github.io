@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            cursor: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+
+    <div class="store-menu display" id="storeMenu">
+        <ul style="list-style: none;">
+            <a href="" style="animation-delay: 0;">META</a>
+            <a href="" style="animation-delay: 0.25s;">CHANEL</a>
+            <a href="" style="animation-delay: 0.5s;">CELINE</a>
+            <a href="" style="animation-delay: 0.75s;">BLACKPINK</a>
+            <a href="" style="animation-delay: 1s;">KPOP</a>
+        </ul>
+    </div>
+    <div class="inverted-cursor" id="invertedCursor"></div>
+
+</body>
+<script>
+    // Inverted cursor
+    const cursor = document.getElementById("invertedCursor");
+    cursorProperties = cursor.getBoundingClientRect();
+    const body = document.getElementsByTagName("body")[0];
+
+    body.addEventListener("mousemove", (e) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        cursor.style.left = mouseX + "px";
+        cursor.style.top = mouseY + "px";
+    });
+
+    // Enlarge cursor when it hovers over anchor elements
+    const anchorElements = document.querySelectorAll("a");
+
+    anchorElements.forEach((element) => {
+        element.addEventListener("mouseover", () => {
+            cursor.style.transform = "scale(1.5)";
+        });
+
+        element.addEventListener("mouseout", () => {
+            cursor.style.transform = "scale(1)";
+        });
+    });
+
+    window.onload = function () {
+        document.body.style.cursor = "none";
+    };
+</script>
+
+
+</html>
