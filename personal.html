@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade_Plaza_minecraft_V2</title><link rel="shortcut icon" type="image/x-icon" href="logo.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap" rel="stylesheet">
     <link rel="preload" href="blue-forest-minimal-4k-kz.jpg" as="image">
     <link rel="preload" href="zsi4mwegkyo61.jpg" as="image">
+    <title>Trade_Plaza_minecraft_V2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
 </head>
 
 <body style="background-color: #050505;">
+
+
     <main-header></main-header>
 
 
 
 
 
-    <div id="dots-container" style="margin-top:112px"></div>
+    <div id="dots-container"></div>
     <main id="About" style="padding-top:none;margin-top:0;background-color: #050505;">
         <div class="section" style="background-color: transparent;">
             <div class="imgDiv">
@@ -32,8 +35,8 @@
                     <li>
                         HTML, CSS, JS, Python, VS
                     </li>
-                    <li>broke TF2 habit despite 800+ hours</li>
-                    <li>The Goal: A Tom-Level Standard Website</li>
+                    <li>800+ hours TF2 (retired)</li>
+                    <li>Watch me elavate this website to be TZ's level</li>
                 </ul>
             </div>
         </div>
@@ -50,11 +53,12 @@
             </div>
         </div>
     </main>
+    <script src="navbar.js"></script>
     <script>
         window.onload = function () {
 
             const dotsContainer = document.getElementById("dots-container");
-            const length = window.innerWidth/2; //how many dots
+            const length = window.innerWidth / 2; //how many dots
             const dots = [];
 
             function createDot() {
@@ -122,7 +126,7 @@
 
                     if (distance <= radiusDistance) {
                         // Calculate the scale factor based on the distance with a minimum of minScale
-                        const scale = Math.max(1, 20.75 - (distance / (radiusDistance)) * 18.75);
+                        const scale = Math.max(1, 45.75 - (distance / (radiusDistance)) * 40.75);
                         dot.style.transform = `scale(${scale})`;
                     } else {
                         dot.style.transform = `scale(${minScale})`;
@@ -132,10 +136,7 @@
         }
 
     </script>
-                            <script src="navbar.js"></script>
-
-        <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
