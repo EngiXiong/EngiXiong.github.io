@@ -17,15 +17,16 @@ class Header extends HTMLElement {
 
     </div>
     <div class="mobile-nav-bar-contents">
-        <a href="https://engixiong.github.io/index.html" style="animation-delay: 0.1s;"
+        <a href="https://engixiong.github.io/index.html" style="animation-delay: 0s;"
             class="the-contents">Home</a>
         <a href="https://engixiong.github.io/personal.html" style="animation-delay: 0.25s;" class="the-contents">About</a>
-    </div>
+        <a href="https://engixiong.github.io/EngiXiongPaths.html" style="animation-delay: 0.50s;" class="the-contents">EngiXiong Paths</a>
+        </div>
 
     <div class="nav-bar">
         <ul>
             <div class="logo-container">
-                <a href="https://engixiong.github.io/index.html"><img class="logo" src="logo.png" alt=""></a>
+                <a href="https://engixiong.github.io/index.html"><img draggable="false" class="logo" src="logo.png" alt=""></a>
             </div>
             <div>
                 <li>
@@ -37,8 +38,8 @@ class Header extends HTMLElement {
                     ┃
                 </li>
                 <li>
-                    <a class="right" href="#Contact">
-                        Placeholder (reformat)
+                    <a class="right" id="store" href="EngiXiongPaths.html">
+                        EngiXiong Paths
                     </a>
                 </li>
             </div>
