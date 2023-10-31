@@ -44,7 +44,7 @@ body {
     height: 24vmax;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-image: linear-gradient(rgb(16, 201, 253), rgb(98, 0, 255));
+    background-image: linear-gradient(rgb(16, 190, 253),rgb(16, 87, 253), rgb(119, 0, 255));
     /* animation: rotate 2.5s infinite cubic-bezier(.4, .41, .82, .64); */
     animation: rotate 1.5s infinite;
 }
