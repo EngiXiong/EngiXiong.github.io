@@ -17,7 +17,6 @@
 <body>
     <div class="introduction-words">
         <p id="one" style="transform: translate(0,6vw);"></p>
-        <!-- <p class="block">Kevin Xiong</p> -->
         <p id="two" style="font-size: clamp(20px, 3vw, 55px);z-index: 3;transform: translate(0,2vw);"></p>
     </div>
 
@@ -31,7 +30,7 @@
     <main-header></main-header>
 
     <div class="background-container">
-        <img draggable="false" class="background" src="5120x2880_pure_minimal (1).png" style="width:100vw;height:100vh"
+        <img draggable="false" class="background" src="5120x2880_pure_minimal (1).png" style="width:100%;height:100vh"
             alt="">
     </div>
 
@@ -134,13 +133,13 @@
             for (let i = 0; i < string1.length; i++) {
                 risingNumbers1[i] = 0.1 / (i + 1);
                 opacityAmount1[i] = 0.02 / (i + 1);
-                one.innerHTML += `<span style="position: relative; opacity:${opacityAmount1[i]}; bottom: ${risingNumbers1[i]}vw">${string1[i]}</span>`;
+                one.innerHTML += `<span style="position: absolute; opacity:${opacityAmount1[i]}; bottom: ${risingNumbers1[i]}vw">${string1[i]}</span>`;
             }
 
             for (let i = 0; i < string2.length; i++) {
                 risingNumbers2[i] = 0.1 / (i + 1);
                 opacityAmount2[i] = 0.02 / (i + 1);
-                two.innerHTML += `<span style="position: relative; opacity:${opacityAmount2[i]}; bottom: ${risingNumbers2[i]}vw">${string2[i]}</span>`;
+                two.innerHTML += `<span style="position: absolute; opacity:${opacityAmount2[i]}; bottom: ${risingNumbers2[i]}vw">${string2[i]}</span>`;
             }
 
             function risingAnimation(test1, test2, risingNumbers, opacityAmount, secondArr, riseAmount, roof) {
@@ -177,7 +176,7 @@
             myReq = requestAnimationFrame(() => risingAnimation(one, string1, risingNumbers1, opacityAmount1, secondArr1, riseAmount1, roof1));
             myReq2 = requestAnimationFrame(() => risingAnimation(two, string2, risingNumbers2, opacityAmount2, secondArr2, riseAmount2, roof2));
 
-            scrollToTopWithDelay();
+            // scrollToTopWithDelay();
 
         })
         // Set the date we're counting down to
