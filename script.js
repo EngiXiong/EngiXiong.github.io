@@ -49,33 +49,6 @@ body.addEventListener("mousemove", e => {
             duration: 3000, fill: "forwards"
         });
     }
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-});
-// Inverted cursor
-const cursor = document.getElementById("invertedCursor");
-cursorProperties = cursor.getBoundingClientRect();
-
-// Enlarge cursor when it hovers over anchor elements
-const anchorElements = document.querySelectorAll("a");
-introWords = document.querySelector("p");
-anchorElements.forEach((element) => {
-    element.addEventListener("mouseover", () => {
-        cursor.style.transform = "scale(1.5)";
-    });
-
-    element.addEventListener("mouseout", () => {
-        cursor.style.transform = "scale(1)";
-    });
-});
-introWords.addEventListener("mouseover", () => {
-    cursor.style.transform = "scale(1.5)";
-});
-
-introWords.addEventListener("mouseout", () => {
-    cursor.style.transform = "scale(1)";
 });
 body.addEventListener("load", e => {
     // ig it just returns
@@ -88,8 +61,6 @@ body.addEventListener("load", e => {
             duration: 3000, fill: "forwards"
         });
     }
-    document.body.style.cursor = "none";
-
 });
 
 function myFunction() {
@@ -107,9 +78,14 @@ function myFunction() {
 
 window.addEventListener("resize", myFunction);
 
-
-
-
+navBar = document.getElementsByClassName("nav-bar")[0];
+cursor = document.getElementById("invertedCursor");
+navBar.addEventListener("mouseover", e => {
+    cursor.style.zIndex = "9999";
+})
+navBar.addEventListener("mouseout", e => {
+    cursor.style.zIndex = "0";
+})
 // storeButton = document.getElementById("store");
 // storeMenu = document.getElementById("storeMenu");
 // body = document.getElementsByTagName("body")[0];
@@ -145,10 +121,6 @@ window.addEventListener("resize", myFunction);
 // storeMenu.addEventListener("animationend", () => {
 //     animationFinished = true;
 // });
-
-
-
-
 
 
 
