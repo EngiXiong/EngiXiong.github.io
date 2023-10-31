@@ -12,7 +12,7 @@
     });
 
     // Enlarge cursor when it hovers over anchor elements
-    const anchorElements = document.querySelectorAll("a");
+    const anchorElements = document.querySelectorAll("a,p");
 
     anchorElements.forEach((element) => {
         element.addEventListener("mouseover", () => {
