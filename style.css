@@ -925,8 +925,8 @@ a.article:active {
 }
 
 .inverted-cursor {
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 999;
     width: 22.5px;
     height: 22.5px;
     top: 50%;
@@ -935,6 +935,10 @@ a.article:active {
     background-color: aliceblue;
     border-radius: 100px;
     pointer-events: none;
-    mix-blend-mode: difference;
+    mix-blend-mode:difference;
     transition: transform 0.2s;
+}
+
+* {
+    cursor: none;
 }
