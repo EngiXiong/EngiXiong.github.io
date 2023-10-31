@@ -12,6 +12,7 @@ body {
 }
 
 .blob {
+    isolation: isolate;
     position: absolute;
     pointer-events: none;
     z-index: 0;
@@ -37,15 +38,17 @@ body {
 }
 
 
+
 .inside {
     position: relative;
     height: 24vmax;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-image: linear-gradient(rgb(11, 64, 254), #0ff3fff5);
+    background-image: linear-gradient(rgb(16, 201, 253), rgb(98, 0, 255));
     /* animation: rotate 2.5s infinite cubic-bezier(.4, .41, .82, .64); */
     animation: rotate 1.5s infinite;
 }
+
 
 
 /* @media only screen and (max-width: 1920px) {
@@ -315,7 +318,7 @@ main {
 
 main>* {
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -601,7 +604,7 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top:7em;
+    top: 7em;
 }
 
 .dot {
@@ -818,8 +821,9 @@ a.article:active {
         margin-top: 6.25em;
         margin-bottom: 2em;
     }
-    #dots-container{
-        top:5.125em;
+
+    #dots-container {
+        top: 5.125em;
     }
 
 }
@@ -903,7 +907,6 @@ a.article:active {
     margin-bottom: 5px;
     width: fit-content;
     animation: riseUp 1.6s forwards
-    
 }
 
 @keyframes riseUp {
@@ -926,7 +929,7 @@ a.article:active {
 
 .inverted-cursor {
     position: fixed;
-    z-index: 999;
+    z-index: 1;
     width: 22.5px;
     height: 22.5px;
     top: 50%;
@@ -935,10 +938,6 @@ a.article:active {
     background-color: aliceblue;
     border-radius: 100px;
     pointer-events: none;
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
     transition: transform 0.2s;
-}
-
-* {
-    cursor: none;
 }
