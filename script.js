@@ -2,39 +2,8 @@
 
 
 
-var blobInside = document.getElementById("blobInside"); // Replace "blobInside" with the actual ID of your element
+var blobInside = document.getElementById("blobInside");
 
-// var scrolledPast100px = false;
-
-// function checkScrollPosition() {
-//     var currentScrollPosition = window.scrollY;
-
-//     if (!scrolledPast100px && currentScrollPosition >= 800) {
-//         // blobInside.animate({
-//         //     backgroundImage: "linear-gradient(#27ffff, rgb(87, 249, 255), #0e5aff)"
-
-//         // }, {
-//         //     duration: 500, fill: "forwards"
-//         // });
-//         // blobInside.style.animation="colorChange2 2s forwards"
-//         scrolledPast100px = true;
-
-//     } else if (scrolledPast100px && currentScrollPosition < 800) {
-//         // blobInside.animate({
-//         //     backgroundImage: "linear-gradient(#f4ffa0, rgb(248, 255, 122), #fff586)"
-//         // }, {
-//         //     duration: 500, fill: "forwards"
-//         // });
-//         blobInside.style.animation="colorChange1 2s forwards"
-//         scrolledPast100px = false;
-//     }
-// }
-
-// window.addEventListener('scroll', checkScrollPosition);
-
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
 
 
 moblieNavBar = document.getElementsByClassName("mobile-nav-bar")[0]
@@ -108,5 +77,50 @@ function myFunction() {
 
 
 window.addEventListener("resize", myFunction);
+
+
+
+// storeButton = document.getElementById("store");
+// storeMenu = document.getElementById("storeMenu");
+// body = document.getElementsByTagName("body")[0];
+// blob = document.getElementsByClassName("blob")[0];
+// state = false;
+
+// let animationFinished = true;
+
+// storeButton.addEventListener("click", (e) => {
+//     e.stopPropagation(); // Stop event propagation to body
+//     if (animationFinished) {
+//         state = !state;
+//         if (state) {
+//             storeMenu.style.display = "block";
+//             storeMenu.classList.remove("store-menu-gone");
+//         } else {
+//             storeMenu.classList.add("store-menu-gone");
+//         }
+//         animationFinished = false;
+//     }
+// });
+
+// body.addEventListener("click", (e) => {
+//     if (state == true) {
+//         if (animationFinished) {
+//             animationFinished = false;
+//             storeMenu.classList.add("store-menu-gone");
+//             state = !state;
+//         }
+//     }
+// });
+
+// storeMenu.addEventListener("animationend", () => {
+//     animationFinished = true;
+// });
+
+
+
+
+
+
+
 
 
