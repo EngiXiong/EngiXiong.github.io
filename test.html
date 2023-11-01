@@ -14,7 +14,7 @@
     // Request notification permission when the page loads
     Notification.requestPermission().then(perm => {
         if (perm === "granted") {
-            notification = new Notification("Example Notification", { body: "This is more text" });
+            notification = new Notification("Notification progress", { body: "Only TO may see this" });
         }
     });
 </script>
