@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -101,7 +100,6 @@
 
     <script src="navbar.js"></script>
     <script src="script.js"></script>
-    <script src="cursor.js"></script>
 
     <script>
         let one = document.getElementById("one");
@@ -209,6 +207,35 @@
                 document.getElementById("timer").innerHTML = "Released";
             }
         }, 1000);
+
+
+
+
+        // Request notification permission
+        Notification.requestPermission().then(function (permission) {
+            if (permission === 'granted') {
+                const notification = new Notification("testing 1", { body: "extra text" });
+            } else {
+                console.error('Notification permission denied.');
+            }
+        }).catch(function (error) {
+            console.error('Error requesting notification permission:', error);
+        });
+
+
+
+
+
+
+        // if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/service-worker.js')
+        //         .then(function (registration) {
+        //             console.log('Service Worker registered with scope:', registration.scope);
+        //         }).catch(function (error) {
+        //             console.error('Service Worker registration failed:', error);
+        //         });
+        // }
+
     </script>
 </body>
 
