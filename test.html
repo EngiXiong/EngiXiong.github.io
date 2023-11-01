@@ -14,21 +14,6 @@
     // Request notification permission when the page loads
     Notification.requestPermission().then(perm => {
         if (perm === "granted") {
-            // Permission granted
-        }
-    });
-
-    document.addEventListener("visibilitychange", () => {
-        if (document.visibilityState === "hidden" && notification) {
-            notification = new Notification("Come back!", { body: "Don't leave me hanging!" });
-        } else if (notification) {
-            notification.close();
-        }
-    });
-
-    // Add a click event listener to the button
-    document.querySelector("button").addEventListener("click", () => {
-        if (Notification.permission === "granted") {
             notification = new Notification("Example Notification", { body: "This is more text" });
         }
     });
