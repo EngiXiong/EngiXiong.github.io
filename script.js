@@ -80,12 +80,7 @@ window.addEventListener("resize", myFunction);
 
 navBar = document.getElementsByClassName("nav-bar")[0];
 cursor = document.getElementById("invertedCursor");
-navBar.addEventListener("mouseover", e => {
-    cursor.style.zIndex = "9999";
-})
-navBar.addEventListener("mouseout", e => {
-    cursor.style.zIndex = "0";
-})
+
 // storeButton = document.getElementById("store");
 // storeMenu = document.getElementById("storeMenu");
 // body = document.getElementsByTagName("body")[0];
