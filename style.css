@@ -656,18 +656,23 @@ hr {
 
 a.article {
     transition: 1s;
+    display: block;
+    color: red;
+    margin-top: 35px;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a.article:link {
     display: block;
-    color: white;
+    color: #89CFF3;
     margin-top: 35px;
     background-color: transparent;
     text-decoration: none;
 }
 
 a.article:visited {
-    color: rgb(221, 221, 221);
+    color: #427D9D;
     background-color: transparent;
     text-decoration: none;
 }
