@@ -39,7 +39,7 @@
 
     <main class="blog">
         <div class="articles-list" style="padding:10px;text-decoration: none;">
-            <h2 style="font-style: italic;font-size: 25px;text-decoration:none;margin-bottom: 20px;">This website was
+            <h2 style="font-style: italic;font-size: 25px;text-decoration:none;margin-bottom: 15px;">This website was
                 heavily inspired by
                 TZ's Engi's (TF2) Exchanges
             </h2>
@@ -47,14 +47,14 @@
                 <h2 style="margin-top: 35px;text-decoration: none;font-size:30px">Recent Posts</h2>
             </div>
             <hr style="margin-bottom: 10px;margin-top:20px;width:800px">
-            <div
+            <!-- <div
                 style="display:flex;justify-content: center;flex-wrap: wrap;text-align: center;color:rgb(67, 200, 253);flex-direction: column;">
                 <p style="margin-top: 5px;font-size:2.8em">Project 20K:&nbsp;</p>
                 <p style="margin-top: 5px;font-size:1.25em" id="timer"></p>
-            </div>
+            </div> -->
             <ul class="articles-list">
                 <li><a href="" class="article">
-                        <p style="text-decoration: underline;">These articles were written when I was young(er). I hope they don't make a unideal first impression of me...(check out About section)</p>
+                        <p style="text-decoration: underline;">These articles were written when I was young(er)...I hope they don't make an unideal first impression of me :O (check out About section)</p>
                     </a>
                     <p style="font-size:18px;">November 29th, 2023</p>
                 </li>
@@ -183,34 +183,34 @@
             scrollToTopWithDelay();
 
         })
-        // Set the date we're counting down to
-        var countDownDate = new Date("Nov 23, 2023 23:59:59").getTime();
+        // // Set the date we're counting down to
+        // var countDownDate = new Date("Nov 23, 2023 23:59:59").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
+        // // Update the count down every 1 second
+        // var x = setInterval(function () {
 
-            // Get today's date and time
-            var now = new Date().getTime();
+        //     // Get today's date and time
+        //     var now = new Date().getTime();
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+        //     // Find the distance between now and the count down date
+        //     var distance = countDownDate - now;
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        //     // Time calculations for days, hours, minutes and seconds
+        //     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        //     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        //     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        //     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Output the result in an element with id="demo"
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+        //     // Output the result in an element with id="demo"
+        //     document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        //         + minutes + "m " + seconds + "s ";
 
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "Released";
-            }
-        }, 1000);
+        //     // If the count down is over, write some text 
+        //     if (distance < 0) {
+        //         clearInterval(x);
+        //         document.getElementById("timer").innerHTML = "Released";
+        //     }
+        // }, 1000);
 
 
 
